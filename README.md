@@ -1,7 +1,6 @@
 ## Improve Your React List Perf
 
-This is a simple project to show how to avoid unnecessary re-renders within controlled stateful lists in React.
-Check out the video on [YouTube](https://www.youtube.com/channel/UCg4LIIdqLThnETjWcw2sEBg/), or [code along with me](https://teton.dev/v/react-list-perf)
+Managing stateful lists in React can seem simple enough. However, there are a few things to keep in mind to avoid unnecessary re-renders that can bottleneck your app and make it feel slow. Check out the video on [YouTube](https://www.youtube.com/channel/UCg4LIIdqLThnETjWcw2sEBg/), or [code along with me](https://teton.dev/v/react-list-perf).
 
 
 ## Getting started
