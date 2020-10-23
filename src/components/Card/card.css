@@ -1,0 +1,51 @@
+.card {
+  box-sizing: border-box;
+  height: 200px;
+  width: 200px;
+  border-radius: 4px;
+  margin: 0.75rem;
+  user-select: none;
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12);
+  outline: none;
+}
+.card:hover, .card:focus {
+  cursor: pointer;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+  transform: scale(1.01);
+}
+.card[aria-checked]:before {
+  content: '';
+  position: absolute;
+  backdrop-filter: blur(1px);
+  height: 100%;
+  width: 100%;
+  background: rgba(72, 163, 248, 0.25);
+  border-radius: 4px;
+}
+.cardTitle, .cardContent, .cardFooter {
+  padding: 0.5rem;
+}
+.cardTitle {
+  height: 25px;
+  border-bottom: 1px solid #e0e0e0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.cardContent {
+  flex-grow: 1;
+  color: #222;
+}
+
+.checkmark {
+  width: 24px;
+  height: 30px;
+}
+.checkContainer {
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+}

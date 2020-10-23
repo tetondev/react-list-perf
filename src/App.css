@@ -2,37 +2,38 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  background-color: #eee;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cardGrid {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header {
+  position: sticky;
+  top: 0; /* Don't forget this, required for the stickiness */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(
+    to right,
+    hsl(288.78, 100%, 45.1%) 0%,
+    hsl(287.66, 87.66%, 48.06%) 8.1%,
+    hsl(285.75, 80.04%, 50.89%) 15.5%,
+    hsl(282.98, 78.88%, 53.57%) 22.5%,
+    hsl(279.23, 77.67%, 56.1%) 29%,
+    hsl(274.39, 76.39%, 58.48%) 35.3%,
+    hsl(268.32, 75.06%, 60.69%) 41.2%,
+    hsl(260.89, 73.7%, 62.72%) 47.1%,
+    hsl(251.98, 72.32%, 64.58%) 52.9%,
+    hsl(241.51, 70.95%, 66.25%) 58.8%,
+    hsl(231.05, 72.94%, 63.77%) 64.7%,
+    hsl(222.85, 75.21%, 60.45%) 71%,
+    hsl(216.47, 77.24%, 56.92%) 77.5%,
+    hsl(211.56, 79.06%, 53.18%) 84.5%,
+    hsl(207.82, 83.19%, 49.24%) 91.9%,
+    hsl(205.04, 100%, 45.1%) 100%
+  );
+  color: #fff;
+  z-index: 1;
+  padding: 0.25rem 1rem;
 }
