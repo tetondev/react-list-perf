@@ -74,4 +74,3 @@ export default function useSelection({ initialItems, selectableDefault = false }
     updateSelectedStatus,
   }
 }
-

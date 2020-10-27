@@ -1,6 +1,6 @@
-import React, { useCallback } from 'react';
+import React, { useCallback } from 'react'
 import checkmark from './assets/check-circle.svg'
-import './card.css';
+import './card.css'
 
 const Card = ({ children, id, selected, updateSelectedStatus }) => {
   const handleKeyDown = useCallback(
@@ -13,11 +13,22 @@ const Card = ({ children, id, selected, updateSelectedStatus }) => {
   )
 
   return (
-    <div className="card" role="checkbox" aria-checked={selected ? '' : undefined} tabIndex={0} onClick={(e) => updateSelectedStatus(id, e.shiftKey)} onKeyDown={handleKeyDown}>
+    <div
+      className="card"
+      role="checkbox"
+      aria-checked={selected ? '' : undefined}
+      tabIndex={0}
+      onClick={(e) => updateSelectedStatus(id, e.shiftKey)}
+      onKeyDown={handleKeyDown}
+    >
       {children}
-      {selected && <div className="checkContainer"><img className="checkmark" alt="selected" src={checkmark} /></div>}
+      {selected && (
+        <div className="checkContainer">
+          <img className="checkmark" alt="selected" src={checkmark} />
+        </div>
+      )}
     </div>
-  );
-};
+  )
+}
 
-export default Card;
+export default Card

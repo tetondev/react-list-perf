@@ -1,12 +1,10 @@
-import React from 'react';
-import './App.css';
-import data from './assets/dataSet';
+import React from 'react'
+import './App.css'
+import data from './assets/dataSet'
 import { Card, Title, Content, Footer, useSelection } from './components/Card'
 
 function App() {
-  const { selectableItems,
-    selectedItems,
-    updateSelectedStatus } = useSelection({ initialItems: data })
+  const { selectableItems, selectedItems, updateSelectedStatus } = useSelection({ initialItems: data })
   return (
     <div className="App">
       <header>
@@ -22,7 +20,7 @@ function App() {
         ))}
       </section>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
